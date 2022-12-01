@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prineira App V2</title>
 </head>
+
 <body>
 
-<script src="vue/vue.js"></script>
+    <script src="vue/vue.js"></script>
 
-<div id="app">
-    <input type="text" v-on:input="alterarTitulo">
-    {{ titulo }}
-</div>
+    <div id="app">
+        <input type="text" v-on:input="alterarTitulo">
+        {{ titulo }}
+    </div>
 
-<script>
-  new Vue({
-    el:'#app',
-    data:{
-        titulo:'Testando Vue JS'
-    },
-    methods: {
-        alterarTitulo(event){
-          this.titulo=event.target.value
-        }
-    },
-  })
-</script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                titulo: 'Testando Vue JS'
+            },
+            methods: {
+                alterarTitulo(event) {
+                    this.titulo = event.target.value
+                }
+            },
+        })
+    </script>
 
 </body>
+
 </html>
