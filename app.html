@@ -2,17 +2,15 @@
 <script src="vue/vue.js"></script>
 
 <div id="app">
-    {{ message }}
+    {{ titulo }}
 </div>
 
 <script>
-  const { createApp } = Vue
-
-  createApp({
-    data(){
-        return{
-            message:'Usando VueJS'
-        }
+  new Vue({
+    el:"#app",
+    data:{
+      titulo:'Usando Vue JS'
     }
-  }).mount('#app')
+  }
+)
 </script>
