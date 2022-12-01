@@ -11,7 +11,7 @@
 <script src="vue/vue.js"></script>
 
 <div id="app">
-    <input type="text" name="" id="">
+    <input type="text" v-on:input="alterarTitulo">
     {{ titulo }}
 </div>
 
@@ -20,7 +20,12 @@
     el:'#app',
     data:{
         titulo:'Testando Vue JS'
-    }
+    },
+    methods: {
+        alterarTitulo(event){
+          this.titulo=event.target.value
+        }
+    },
   })
 </script>
 
